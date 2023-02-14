@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    color: #fefefe;
+}
+
+body {
+    background-color: #000;
+}
+
+.sparkle {
+    background-image: url(https://media.discordapp.net/attachments/987149728800198686/991834200309248070/sparkle.gif);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.brand-title {
+    font-size: 30px;
+}

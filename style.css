@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: sans-serif;
     color: #fefefe;
+    list-style: none;
 }
 
 ::-webkit-scrollbar {
@@ -22,8 +23,22 @@
     background-color: grey;
 }
 
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
 section {
     height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -33,6 +48,11 @@ body {
 
 a {
     text-decoration: none;
+}
+
+section {
+    height: 100vh;
+    padding: 4.5rem 0 1rem;
 }
 
 .sparkle {
@@ -47,7 +67,7 @@ a {
     transform: translate(-50%, -50%);
 }
 
-h1 {
+.heading {
     animation: down 2s;
     font-size: 2em;
     font-weight: bold;
@@ -70,6 +90,239 @@ h1 {
 
 .owner:hover {
     text-decoration: underline;
+}
+
+/* Nav Bar */
+
+nav {
+    position: fixed;
+}
+
+.nav-bar {
+    height: 50px;
+    box-shadow: 0px 4px 4px hsl(0deg 0% 4% / 30%);
+}
+
+.brand-logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 50px;
+    line-height: 50px;
+}
+
+.navbar-items {
+    float: right;
+    margin-right: 30px;
+}
+
+.nav-item {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+
+/* About Section */
+
+.section-subtitle {
+    font-size: 0.75rem;
+    color: hsl(219, 4%, 55%);
+    display: block;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    color: #fefefe;
+    margin-bottom: 2rem;
+}
+
+.section-title, .section-subtitle {
+    text-align: center;
+}
+
+.about-img {
+    width: 150px;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+}
+
+.about-data {
+    text-align: center;
+}
+
+.about-info {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(3, 140px);
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.about-box {
+    display: grid;
+    place-items: center;
+    width: 120px;
+    height: 100px;
+    background-color: #29292d;
+    border-radius: 0.75rem;
+    padding: .75rem .5rem;
+}
+
+.about-container {
+    text-align: center;
+}
+
+.about-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-title {
+    font-weight: 500;
+    font-size: 18px;
+} 
+
+.about-description {
+    font-size: 12px;
+}
+
+.about_information {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-information-slogan {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.buy-now {
+    border: 2px solid white;
+    padding: 0.75rem 1rem;
+    border-radius: .5rem;
+    transition: 500ms;
+}
+
+.buy-now:hover {
+    background-color: white;
+    color: #000;
+}
+
+/* Credits Section */
+
+.credits-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+}
+
+.credits-card {
+    width: 200px;
+    background-color: #29292d;
+    padding: 1.25rem 1.5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.credits-pfp {
+    width: 60px;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+}
+
+.credits-username {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+.credits-description {
+    font-size: 0.8rem;
+}
+
+/* Footer Section */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #3586ff;
+    padding: 20px 50px;
+    flex-direction: column;
+}
+
+.social-icons, .footer-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.social {
+    font-size: 2em;
+    color: #fefefe;
+    margin: 0 10px;
+    display: inline-block;
+    transition: .5s;
+    margin-bottom: .5rem;
+}
+
+.social:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item {
+    font-size: 1.2em;
+    color: #fefefe;
+    margin: 0 10px;
+    display: inline-block;
+    transition: .5s;
+    opacity: .75;
+    margin-bottom: 2rem;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animWave 4s linear infinite;
+}
+
+#wave2 {
+    z-index: 1000;
+    opacity: .5;
+    bottom: 0;
+    animation: animWave02 4s linear infinite;
+}
+
+#wave3 {
+    z-index: 1000;
+    opacity: .2;
+    bottom: 15px;
+    animation: animWave 3s linear infinite;
+}
+
+#wave4 {
+    z-index: 999;
+    opacity: .7;
+    bottom: 20px;
+    animation: animWave02 3s linear infinite;
 }
 
 /* Second Code */
@@ -156,5 +409,23 @@ h1 {
     to {
         transform: translate3d(0, 0, 0);
         opacity: 1
+    }
+}
+
+@keyframes animWave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-y: 0px;
+    }
+}
+
+@keyframes animWave02 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
     }
 }

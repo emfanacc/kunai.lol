@@ -37,11 +37,3 @@ document.addEventListener('contextmenu', (e) => {
       titleScroller(text.substr(1) + text.substr(0, 1));
     }, 350);
   }("Vault is <3 "));
-
-// Google analytics 
-
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-WS0FPKJ5BR');

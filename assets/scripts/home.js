@@ -41,3 +41,20 @@ for (var i=0; i < btns.length; i++) {
         this.className += " active";
     })
 }
+
+
+// Typing JS
+
+var typed = new Typed('.typing', {
+    strings: [
+        'Welcome to kunai.lol', 
+        'Private bio links',
+        'Free for friends',
+        'Case Closed',
+        '♡'
+    ],
+    typeSpeed: 60,
+    backSpeed: 10,
+    startDelay: 2000,
+    smartBackspace: true // Default value
+  });

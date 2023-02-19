@@ -16,19 +16,19 @@
             <div class="tooltip">
                 <span class="tooltiptext">Home</span>
                 <a href="#home" class="home-section" draggable="false">
-                    <i class="fa-solid fa-house bottom-icon btn active"></i>
+                    <i class="fa-solid fa-house bottom-icon btn active icon"></i>
                 </a>
             </div>
             <div class="tooltip" id="navbar">
                 <span class="tooltiptext">About</span>
                 <a href="#about" class="about-section" draggable="false">
-                    <i class="fa-solid fa-circle-info bottom-icon btn"></i>
+                    <i class="fa-solid fa-circle-info bottom-icon btn icon"></i>
                 </a>
             </div>
             <div class="tooltip">
                 <span class="tooltiptext">Footer</span>
                 <a href="#footer" class="footer-section" draggable="false">
-                    <i class="fa-solid fa-scroll bottom-icon btn"></i>
+                    <i class="fa-solid fa-scroll bottom-icon btn icon"></i>
                 </a>
             </div>
         </div>
@@ -36,17 +36,36 @@
 
     <!-- Main Section | @vault#4199-->
     <div class="main-sections">
+
+        <!-- Home Section -->
         <section class="home-section" id="home">
             <h1 class="title">
                 <span class="sparkle">kunai.lol</span>
             </h1>
             <span class="typing"></span>
+
+            <div class="btn-container">
+                <a href="" class="buy-btn" id="btn">
+                    <button class="buy">Buy</button>
+                </a>
+                <a href="" class="support-btn" id="btn">
+                    <button class="support">Support</button>
+                </a>
+            </div>
         </section>
+
+        <!-- About Section -->
         <section class="about-section" id="about"></section>
+
+        <!-- Credits Section-->
         <section class="credits"></section>
-        <section class="footer" id="footer"></section>
+
+        <!-- Footer Section -->
+        <footer class="footer" id="footer"></footer>
     </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script src="assets/scripts/home.js"></script>
 </body>

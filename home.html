@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>kunai | home</title>
+</head>
+<body>
+
+    <!-- Navigation Bar | @vault#4199 -->
+    <div class="navbar-container">
+        <div class="bottom-bar">
+            <div class="tooltip">
+                <span class="tooltiptext">Home</span>
+                <a href="#home" class="home-section" draggable="false">
+                    <i class="fa-solid fa-house bottom-icon btn active"></i>
+                </a>
+            </div>
+            <div class="tooltip" id="navbar">
+                <span class="tooltiptext">About</span>
+                <a href="#about" class="about-section" draggable="false">
+                    <i class="fa-solid fa-circle-info bottom-icon btn"></i>
+                </a>
+            </div>
+            <div class="tooltip">
+                <span class="tooltiptext">Footer</span>
+                <a href="#footer" class="footer-section" draggable="false">
+                    <i class="fa-solid fa-scroll bottom-icon btn"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Section | @vault#4199-->
+    <div class="main-sections">
+        <section class="home-section" id="home">
+            <h1 class="title">
+                <span class="sparkle">kunai.lol</span>
+            </h1>
+            <span class="typing"></span>
+        </section>
+        <section class="about-section" id="about"></section>
+        <section class="credits"></section>
+        <section class="footer" id="footer"></section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="assets/scripts/home.js"></script>
+</body>
+</html>

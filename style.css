@@ -4,126 +4,57 @@
 @import url('https://fonts.cdnfonts.com/css/strange-piece');
 @import url('https://fonts.cdnfonts.com/css/strasua');
 
-
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    color: #ffff;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    color: #fefefe;
+    background-color: #000;
     font-family: 'Poppins', sans-serif;
     user-select: none;
-    background-color: #0d0d0e;
-}
-
-div {
-    display: block;
 }
 
 a {
     text-decoration: none;
 }
 
-.sparkle {
-    background-image: url(https://media.discordapp.net/attachments/987149728800198686/991834200309248070/sparkle.gif);
+section {
+    height: 100vh;
 }
 
-.center {
-    margin: 0 auto;
-    text-align: center;
+.navbar-container {
+    display: flex;
+    justify-content: center;
 }
 
-.container {
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 80px;
+.bottom-bar {
+    position: fixed;
+    bottom: 1rem;
+    max-width: 240px;
+    background-color: #fff;
+    border-radius: 15px;
+    animation: down 2s;
 }
 
-.pfp-image {
+.bottom-icon {
+    font-size: 25px;
+    padding: .4em;
+    margin: 5px;
+    margin-top: 0;
+    transition: 400ms ease-in-out;
+    color: #000;
     border-radius: 100%;
-    object-fit: cover;
-    max-width: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
-    height: 150px;
-    border: 10px solid #111112;
-    animation: down 2s;
+    background-color: #fff;
 }
 
-.username {
-    font-family: 'Strange Piece';
-    font-size: 24px;
-    margin-top: 30px;
-    font-weight: bold;
-    font-style: italic;
-    animation: down 2s;
-}
-
-.badges {
-    animation: up 2s;
-}
-
-.badge {
-    margin-top: 5px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
-.bio-text {
-    font-size: 16px;
-    font-weight: 500;
-    color: #f1f1f1bd;
-    animation: up 2s;
-}
-
-.socials {
-    animation: up 2s;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.social-icons {
-    margin: 0 2px 0 2px;
-    color: white;
-    font-size: 28px;
-    transition: 500ms;
-}
-
-.social-icons:hover {
-    transform: translateY(-5px);
-}
-
-.button {
-    animation: up 2s;
-    padding: 16px 44px;
-    width: 95%;
-    text-align: center;
-    background-color: #0d0d0e;
-    border: 0 solid #1c1c1c;
-    border-radius: 8px;
-    box-shadow: 0 0 17px 1px rgb(0 0 0 / 57%);
-    cursor: pointer;
-    color: #a7a7a7;
-    margin-bottom: 22px;
-    font-weight: 400;
-    transition: .25s;
-}
-
-.button:hover {
-    -webkit-box-shadow: 0 0 20px 1px rgb(47 47 47/90%);
-    -moz-box-shadow: 0 0 20px 1px rgb(47 47 47/90%);
-    box-shadow: 0 0 20px 1px rgb(47 47 47/90%);
-    transform: scale(.95)
-}
-
-.button:active {
-    transform: scale(.92)
+.bottom-icon:hover {
+    transform: translateY(-10px);
 }
 
 .tooltip {
@@ -145,7 +76,7 @@ a {
     left: 50%;
     margin-left: -63px;
     transform: scale(0);
-    transition: ease-in-out 150ms
+    transition: ease-in-out 200ms
 }
 
 .tooltip:hover .tooltiptext {
@@ -153,46 +84,11 @@ a {
     transform: scale(1)
 }
 
-.inside {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.active {
+    background-color: #000;
+    background-image: linear-gradient(red, blue);
+    transform: translateY(-5px);
 }
-
-.blurpage{
-    background:rgb(0 0 0/15%);
-    backdrop-filter:blur(10px);
-    position:fixed;
-    padding:0;
-    margin:0;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    transition:all 0.3s ease-in-out
-}
-
-#enter {
-    font-family: 'Strange Piece';
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    transition: 0.3s ease-in;
-    font-size: 24px;
-}
-
-@media only screen and (max-width: 768px) {
-    .blur{
-        max-width: 100%;
-    }
-  }
-  @media only screen and (min-width: 2000px) {
-    .blur{
-        max-width: 50%;
-    }
-  }
-
-/* --ANIMATIONS-- */
 
 @keyframes down {
     from {

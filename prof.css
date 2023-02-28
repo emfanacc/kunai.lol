@@ -53,7 +53,7 @@ body{
 }
 
 .username{
-    animation: up 2s;
+    animation: down 2s;
     font-size: 24px;
     margin-top: 30px;
     font-weight: bold;
@@ -77,6 +77,7 @@ body{
     animation: up 2s;
     font-weight: 500;
     color: #f1f1f1bd;
+    animtion: up 2s;
 }
 
 .tooltip {
@@ -112,6 +113,7 @@ body{
     margin-bottom: 30px;
     margin-top: 30px;
     cursor: pointer;
+    animation: up 2s;
 }
 
 .social-icons{
@@ -148,7 +150,8 @@ body{
     transition: transform .25s ease,color .25s ease,background-color .25s ease,border-color .25s ease;
     margin-bottom: 22px;
     font-weight: 400;
-    font-family: poppins
+    font-family: poppins;
+    animation: 2s up;
 }
 
 .btn-link:hover {
@@ -175,4 +178,26 @@ body{
 .mark:hover {
     transform: translateY(-5px);
     text-decoration: underline;
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }

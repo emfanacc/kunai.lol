@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/strange-piece');
+@import url('https://fonts.cdnfonts.com/css/strasua');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/564x/d9/17/a5/d917a5c668d86c5c38c3cdae9520b441.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0d0d0e;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
+    user-select: none;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.sparkle{
+    background-image:url(https://media.discordapp.net/attachments/987149728800198686/991834200309248070/sparkle.gif)
+}
+
+.container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.pfp-img {
+    animation: down 2s;
+    width: 150px;
+    border-radius: 100%;
+    border: 10px solid #201f1f38;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.username {
+    animation: up 2s;
+    margin-top: 30px;
+    font-family: 'Strange Piece';
+    font-size: 24px;
+    display: block;
+}
+
+.badges {
+    animation: up 2s;
+    cursor: pointer;
+    margin-top: 5px;
+    display: block;
+}
+
+.badge {
+    width: 20px;
+    height: 20px;
+}
+
+.bio {
+    animation: up 2s;
+    color: #f1f1f1bd;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 5px;
+    display: block;
+}
+
+.socials {
+    animation: up 2s;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 28px;
+    transition: .4s;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .4s;
+}
+
+.footer:hover {
+    transform: translateY(-5px);
+    text-decoration: underline;
+}
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error-text {
+    font-size: 24px;
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

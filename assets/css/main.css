@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/strange-piece');
+@import url('https://fonts.cdnfonts.com/css/strasua');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #0d0d0e;
+    user-select: none;
+    font-family: sans-serif;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);  
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.sparkle{
+    background-image:url(https://media.discordapp.net/attachments/987149728800198686/991834200309248070/sparkle.gif)
+}
+
+.home-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-title {
+    font-size: 28px;
+    transition: .4s;
+    margin-bottom: 10px;
+    animation: down 2s;
+}
+
+.home-title:hover {
+    transform: scale(1.1);
+}
+
+.marquee-center {
+    display: flex;
+    width: 420px;
+    align-items: center;
+    position: fixed;
+    bottom: 80px;
+    animation: up 2s;
+}
+
+.marquee {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typed-cursor {
+    display: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    transition: .4s;
+}
+
+.footer:hover {
+    transform: translateY(-5px);
+    text-decoration: underline;
+}
+
+/* Profile Section */
+
+.profile-container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.user-pfp {
+    display: block;
+    width: 150px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #201f1f38;
+    animation: down 2s;
+}
+
+.username {
+    margin-top: 30px;
+    font-family: 'Strange Piece';
+    font-size: 24px;
+    animation: up 2s;
+}
+
+.badges {
+    animation: up 2s;
+    margin-top: 5px;
+    display: block;
+}
+
+.badge {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.bio {
+    font-size: 16px;
+    font-weight: 500;
+    color: #f1f1f1bd;
+    animation: up 2s;
+    margin-top: 5px;
+}
+
+.socials {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    animation: up 2s;
+}
+
+.social-icon {
+    transition: .4s;
+    font-size: 24px;
+    margin: 2px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.btn-link {
+    animation: up 2s;
+    padding: 16px 44px;
+    width: 50%;
+    text-align: center;
+    background-color: #0d0d0e;
+    border: 0 solid #1c1c1c;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 17px 1px rgba(0,0,0,.57);
+    -moz-box-shadow: 0 0 17px 1px rgba(0,0,0,.57);
+    box-shadow: 0 0 17px 1px rgba(0,0,0,.57);
+    cursor: pointer;
+    color: #a7a7a7;
+    transition: transform .25s ease,color .25s ease,background-color .25s ease,border-color .25s ease;
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-family: poppins
+}
+
+.btn-link:hover {
+    -webkit-box-shadow: 0 0 20px 1px rgb(47 47 47/90%);
+    -moz-box-shadow: 0 0 20px 1px rgb(47 47 47/90%);
+    box-shadow: 0 0 20px 1px rgb(47 47 47/90%);
+    transform: scale(.95)
+}
+
+.btn-link:active {
+    transform: scale(.92)
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
